@@ -34,6 +34,23 @@ export const NavLinks = styled.ul`
         padding: 0 0 0 1em;
       }
     }
+
+    &:hover {
+      ul {
+        display: block;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 750px) {
+    width: 100%;
+    background: #0e94a0;
+    max-height: 0px;
+    overflow: hidden;
+
+    li {
+      width: 100%;
+    }
   }
 `;
 
@@ -54,6 +71,26 @@ export const DropdownLinks = styled(NavLinks)`
 
       &:hover {
         background: #d5d6d6;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 750px) {
+    width: 100%;
+    display: block;
+    position: static;
+
+    li {
+      width: 100%;
+
+      a {
+        padding: 10px 0 0 50px;
+        background: #0e94a0;
+        color: white;
+
+        &:hover {
+          background: #d5d6d6;
+        }
       }
     }
   }
