@@ -13,7 +13,6 @@ export const HeaderContainer = styled.header`
     margin: 0 0 0 2em;
 
     .logo-text {
-      font-family: "Candal", serif;
       margin: 9px;
 
       span {
