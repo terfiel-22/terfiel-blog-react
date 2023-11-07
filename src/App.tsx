@@ -1,7 +1,8 @@
-import { Routes, Route } from "react-router-dom";
-import MainRoute from "./routes/main-route/main-route.component";
+import { lazy } from "react";
+import { Routes, Route} from "react-router-dom";
+const MainRoute = lazy(() => import("./routes/main-route/main-route.component"));
 import { GlobalStyles } from "./global.styles";
-import { Home } from "./routes/home/home.component";
+import {Home} from "./routes/home/home.component";
 
 export default function App() {
   return (
