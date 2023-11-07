@@ -5,13 +5,13 @@ import {
 import {
   LeftArrow,
   PageWrapper,
-  PostContainer,
   PostWrapper,
   RightArrow,
 } from "./carousel.styles";
 import "react-multi-carousel/lib/styles.css";
 import React from "react";
 import { ButtonGroupProps } from "react-multi-carousel";
+import { CarouselPostItem } from "../carousel-post-item/carousel-post-item.component";
 
 export const Carousel = () => {
   const responsive = {
@@ -35,14 +35,12 @@ export const Carousel = () => {
           renderButtonGroupOutside={true}
           customButtonGroup={<ButtonGroup />}
         >
-          <PostContainer>1</PostContainer>
-          <PostContainer>2</PostContainer>
-          <PostContainer>3</PostContainer>
-          <PostContainer>4</PostContainer>
-          <PostContainer>5</PostContainer>
-          <PostContainer>6</PostContainer>
-          <PostContainer>7</PostContainer>
-          <PostContainer>8</PostContainer>
+          <CarouselPostItem />
+          <CarouselPostItem />
+          <CarouselPostItem />
+          <CarouselPostItem />
+          <CarouselPostItem />
+          <CarouselPostItem />
         </PostWrapper>
       </div>
     </PageWrapper>

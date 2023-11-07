@@ -64,6 +64,7 @@ export const DropdownLinks = styled(NavLinks)`
   right: 0px;
   width: 180px;
   display: none;
+  z-index: 1;
   max-height: ${({ $isNavbarOpen }) => ($isNavbarOpen ? "100em" : "0px")};
 
   li {

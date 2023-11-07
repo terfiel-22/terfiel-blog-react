@@ -3,8 +3,11 @@ import Carousel from "react-multi-carousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const PageWrapper = styled.div`
+  a:hover {
+    color: #006669;
+  }
+
   .post-slider {
-    border: 1px solid red;
     position: relative;
 
     .slider-title {
@@ -15,14 +18,14 @@ export const PageWrapper = styled.div`
 `;
 
 export const PostWrapper = styled(Carousel)`
-  border: 1px dashed red;
   width: 84%;
   height: 350px;
+  overflow: hidden;
   margin: 0px auto;
+  padding: 10px 0px;
 `;
 
-// eslint-disable-next-line react-refresh/only-export-components
-const CustomArrowButton = styled(FontAwesomeIcon)`
+export const CustomArrowButton = styled(FontAwesomeIcon)`
   position: absolute;
   top: 50%;
   font-size: 2em;
@@ -32,15 +35,16 @@ const CustomArrowButton = styled(FontAwesomeIcon)`
 
 export const LeftArrow = styled(CustomArrowButton)`
   left: 30px;
+
+  @media only screen and (max-width: 750px) {
+    left: 10px;
+  }
 `;
 
 export const RightArrow = styled(CustomArrowButton)`
   right: 30px;
-`;
 
-// Move to another component
-export const PostContainer = styled.div`
-  background: #05f7ff;
-  height: 350px;
-  margin: 0px 10px;
+  @media only screen and (max-width: 750px) {
+    right: 10px;
+  }
 `;
