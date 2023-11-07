@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const NavLinks = styled.ul`
+type NavLinksProps = {
+  $isNavbarOpen?: boolean;
+};
+
+export const NavLinks = styled.ul<NavLinksProps>`
   float: right;
   margin: 0px;
   padding: 0px;
@@ -45,9 +49,9 @@ export const NavLinks = styled.ul`
   @media only screen and (max-width: 750px) {
     width: 100%;
     background: #0e94a0;
-    max-height: 0px;
+    max-height: ${({ $isNavbarOpen }) => ($isNavbarOpen ? "100em" : "0px")};
     overflow: hidden;
-
+    transition: all 0.5s ease;
     li {
       width: 100%;
     }
@@ -60,6 +64,7 @@ export const DropdownLinks = styled(NavLinks)`
   right: 0px;
   width: 180px;
   display: none;
+  max-height: ${({ $isNavbarOpen }) => ($isNavbarOpen ? "100em" : "0px")};
 
   li {
     width: 100%;
@@ -84,12 +89,12 @@ export const DropdownLinks = styled(NavLinks)`
       width: 100%;
 
       a {
-        padding: 10px 0 0 50px;
+        padding: 10px 10px 10px 50px;
         background: #0e94a0;
         color: white;
 
         &:hover {
-          background: #d5d6d6;
+          background: #006669;
         }
       }
     }

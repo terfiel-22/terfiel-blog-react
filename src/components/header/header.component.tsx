@@ -2,8 +2,14 @@ import Navbar from "../../components/navbar/navbar.component";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { HeaderContainer } from "./header.styles";
+import { useDispatch, useSelector } from "react-redux";
+import { setIsNavbarOpen } from "../../store/navbar/navbar.action";
+import { selectIsNavbarOpen } from "../../store/navbar/navbar.selector";
 
 export default function Header() {
+  const dispatch = useDispatch();
+  const isNavbarOpen = useSelector(selectIsNavbarOpen);
+  const menuToggleHandler = () => dispatch(setIsNavbarOpen(!isNavbarOpen));
   return (
     <>
       <HeaderContainer>
@@ -16,7 +22,8 @@ export default function Header() {
         <FontAwesomeIcon
           icon={faBars}
           className="menu-toggle"
-        ></FontAwesomeIcon>
+          onClick={menuToggleHandler}
+        />
         <Navbar />
       </HeaderContainer>
     </>
