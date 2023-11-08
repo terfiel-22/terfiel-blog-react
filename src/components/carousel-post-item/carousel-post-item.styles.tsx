@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
-export const PostContainer = styled.div`
+export const CarouselPostItemContainer = styled.div`
   background: white;
   height: 330px;
   margin: 0px 10px;
   border-radius: 5px;
   box-shadow: 1rem 1rem 1rem -1rem #a0a0a033;
 
-  .slider-image {
+  img {
     width: 100%;
     height: 200px;
 

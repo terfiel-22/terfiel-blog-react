@@ -22,4 +22,23 @@ export const GlobalStyles = createGlobalStyle`
         text-decoration: none;
         color: inherit;
     }
+
+    .clearfix::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    .btn {
+        padding: .5rem 1rem;
+        background: #006669;
+        color: white;
+        border: 1px solid transparent;
+        border-radius: .25rem;
+
+        &:hover {
+            background: #005255;
+            color: white !important;
+        }
+    }
 `;
