@@ -1,4 +1,5 @@
 import RecentPostItem from "../recent-post-item/recent-post-item.component";
+import Sidebar from "../sidebar/sidebar.component";
 import { HomeContentContainer } from "./home-content.styles";
 
 const HomeContent = () => (
@@ -9,7 +10,7 @@ const HomeContent = () => (
       <RecentPostItem />
       <RecentPostItem />
     </div>
-    <div className="sidebar"></div>
+    <Sidebar />
   </HomeContentContainer>
 );
 

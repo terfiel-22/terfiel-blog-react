@@ -22,7 +22,8 @@ export const NavLinks = styled.ul<NavLinksProps>`
 
       &:hover {
         background: #006669;
-        transition: 0.5s;
+        color: inherit;
+        transition: all 0.5s;
       }
 
       &.logout {
@@ -39,7 +40,7 @@ export const NavLinks = styled.ul<NavLinksProps>`
       }
     }
 
-    &:hover {
+    &:last-child:hover {
       ul {
         display: block;
       }
@@ -77,6 +78,10 @@ export const DropdownLinks = styled(NavLinks)`
 
       &:hover {
         background: #d5d6d6;
+        color: #444;
+      }
+      &.logout {
+        color: red;
       }
     }
   }
@@ -96,6 +101,10 @@ export const DropdownLinks = styled(NavLinks)`
 
         &:hover {
           background: #006669;
+
+          &:not(.logout) {
+            color: white;
+          }
         }
       }
     }

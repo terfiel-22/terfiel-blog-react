@@ -3,10 +3,6 @@ import Carousel from "react-multi-carousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const PageWrapper = styled.div`
-  a:hover {
-    color: #006669;
-  }
-
   .post-slider {
     position: relative;
 

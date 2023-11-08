@@ -12,11 +12,4 @@ export const HomeContentContainer = styled.div`
     width: 70%;
     float: left;
   }
-
-  .sidebar {
-    width: 30%;
-    float: left;
-    border: 1px dashed green;
-    height: 300px;
-  }
 `;

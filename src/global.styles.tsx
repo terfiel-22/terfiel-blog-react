@@ -22,6 +22,11 @@ export const GlobalStyles = createGlobalStyle`
         text-decoration: none;
         color: inherit;
     }
+    
+    a:hover {
+        color: #006669;
+    }
+
 
     .clearfix::after {
         content: '';
@@ -40,5 +45,18 @@ export const GlobalStyles = createGlobalStyle`
             background: #005255;
             color: white !important;
         }
+    }
+
+    .text-input {
+        padding: .7rem 1rem;
+        display: block;
+        width: 100%;
+        border: 1px solid #e0e0e0e0;
+        border-radius: 5px;
+        outline: none;
+        color: #444;
+        line-height: 1.5rem;
+        font-family: 'Lora', serif;
+        font-size: 1.2em;
     }
 `;

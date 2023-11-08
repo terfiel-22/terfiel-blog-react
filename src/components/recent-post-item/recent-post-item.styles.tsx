@@ -8,10 +8,6 @@ export const RecentPostItemContainer = styled.div`
   background: white;
   position: relative;
 
-  a:hover {
-    color: #006669;
-  }
-
   img {
     width: 40%;
     height: 100%;
