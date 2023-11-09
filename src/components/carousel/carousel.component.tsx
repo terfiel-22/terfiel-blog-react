@@ -4,7 +4,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import {
   LeftArrow,
-  PageWrapper,
+  PostSlider,
   PostWrapper,
   RightArrow,
 } from "./carousel.styles";
@@ -25,25 +25,23 @@ export const Carousel = () => {
     },
   };
   return (
-    <PageWrapper>
-      <div className="post-slider">
-        <h1 className="slider-title">Trending Posts</h1>
-        <PostWrapper
-          responsive={responsive}
-          infinite={true}
-          arrows={false}
-          renderButtonGroupOutside={true}
-          customButtonGroup={<ButtonGroup />}
-        >
-          <CarouselPostItem />
-          <CarouselPostItem />
-          <CarouselPostItem />
-          <CarouselPostItem />
-          <CarouselPostItem />
-          <CarouselPostItem />
-        </PostWrapper>
-      </div>
-    </PageWrapper>
+    <PostSlider>
+      <h1 className="slider-title">Trending Posts</h1>
+      <PostWrapper
+        responsive={responsive}
+        infinite={true}
+        arrows={false}
+        renderButtonGroupOutside={true}
+        customButtonGroup={<ButtonGroup />}
+      >
+        <CarouselPostItem />
+        <CarouselPostItem />
+        <CarouselPostItem />
+        <CarouselPostItem />
+        <CarouselPostItem />
+        <CarouselPostItem />
+      </PostWrapper>
+    </PostSlider>
   );
 };
 

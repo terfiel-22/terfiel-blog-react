@@ -2,7 +2,7 @@ import { FormEventHandler } from "react";
 import { SidebarContainer } from "./sidebar.styles";
 
 const Sidebar = () => {
-  const onSubmitHandler: FormEventHandler<HTMLFormElement> = (e) => {
+  const onSubmitSearchHandler: FormEventHandler<HTMLFormElement> = (e) => {
     e.preventDefault();
     console.log("Submitted");
   };
@@ -10,7 +10,7 @@ const Sidebar = () => {
     <SidebarContainer>
       <div className="section search">
         <h2 className="section-title">Search</h2>
-        <form onSubmit={onSubmitHandler}>
+        <form onSubmit={onSubmitSearchHandler}>
           <input
             type="text"
             name="search-term"

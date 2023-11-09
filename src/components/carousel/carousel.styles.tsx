@@ -2,14 +2,12 @@ import styled from "styled-components";
 import Carousel from "react-multi-carousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export const PageWrapper = styled.div`
-  .post-slider {
-    position: relative;
+export const PostSlider = styled.div`
+  position: relative;
 
-    .slider-title {
-      text-align: center;
-      margin: 30px auto;
-    }
+  .slider-title {
+    text-align: center;
+    margin: 30px auto;
   }
 `;
 

@@ -45,6 +45,11 @@ export const GlobalStyles = createGlobalStyle`
             background: #005255;
             color: white !important;
         }
+
+        &.btn-big { 
+            padding: .7rem 1.3rem;
+            line-height: 1.3em;
+        }
     }
 
     .text-input {
