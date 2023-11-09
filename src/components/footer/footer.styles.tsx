@@ -98,6 +98,8 @@ export const FooterSection = styled.div`
     .btn-big {
       float: right;
       cursor: pointer;
+      font-size: 1.1em;
+      font-family: "Lora", serif;
     }
   }
 `;

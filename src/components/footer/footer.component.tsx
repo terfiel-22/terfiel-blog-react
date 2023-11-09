@@ -89,6 +89,7 @@ const Footer = () => {
             <textarea
               name="message"
               className="text-input contact-input"
+              rows={4}
               placeholder="Your message..."
             ></textarea>
             <button type="submit" className="btn btn-big">
