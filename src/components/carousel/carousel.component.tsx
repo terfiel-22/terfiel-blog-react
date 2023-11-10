@@ -25,7 +25,7 @@ export const Carousel = () => {
     },
   };
   return (
-    <PostSlider>
+    <PostSlider className="full-width">
       <h1 className="slider-title">Trending Posts</h1>
       <PostWrapper
         responsive={responsive}

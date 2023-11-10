@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SidebarContainer = styled.div`
   width: 30%;
   float: left;
-  height: 300px;
+  margin-top: 80px;
 
   .section {
     background: white;
@@ -16,7 +16,6 @@ export const SidebarContainer = styled.div`
     }
 
     &.search {
-      margin-top: 80px;
     }
 
     &.topics {

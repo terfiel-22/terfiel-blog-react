@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const RecentPostItemContainer = styled.div`
   width: 95%;
   height: 270px;
-  margin: 20px auto;
+  margin: 20px 0px;
   border-radius: 5px;
   background: white;
   position: relative;
@@ -12,6 +12,7 @@ export const RecentPostItemContainer = styled.div`
     width: 40%;
     height: 100%;
     float: left;
+    border-radius: 5px 0 0 5px;
   }
 
   .post-preview {
